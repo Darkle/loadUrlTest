@@ -16,7 +16,6 @@ electron.app.on('ready', () => {
   })
   browserWindow.on('unresponsive', () => {
     console.log('browserWindow: unresponsive')
-    browserWindow.destroy()
   })
   browserWindow.webContents.on('did-finish-load', event => {
     console.log('webContents: did-finish-load')
@@ -78,6 +77,6 @@ electron.app.on('ready', () => {
     console.log('webContents: certificate-error')
   })
   //browserWindow.loadURL('https://google.com')
-  //browserWindow.loadURL('http://lszfief78nwfo8dosz8nfeosz8jeosz8t.com')
-  browserWindow.loadURL('http://nonsense:port/yay')
+  browserWindow.loadURL('http://lszfief78nwfo8dosz8nfeosz8jeosz8t.com')
+  //browserWindow.loadURL('http://nonsense:port/yay')
 })
